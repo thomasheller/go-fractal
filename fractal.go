@@ -68,7 +68,7 @@ func (f *Fractal) Stem(n, side int) {
 
 		for i := 1; i <= n; i++ {
 			f.Padding(side - 1)
-			f.StemPart(y, side)
+			f.StemPart(side)
 			f.Padding(side)
 		}
 
@@ -97,7 +97,7 @@ func (f *Fractal) BranchRight(y, side int) {
 	}
 }
 
-func (f *Fractal) StemPart(y, side int) {
+func (f *Fractal) StemPart(side int) {
 	for x := 1; x <= side; x++ {
 		f.Blank()
 	}
