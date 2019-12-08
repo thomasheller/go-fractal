@@ -6,6 +6,12 @@ import (
 	"strings"
 )
 
+const (
+	MaxIters      = 5
+	SegmentLength = 16
+	ScreenWidth   = 100
+)
+
 type Fractal struct {
 	sb strings.Builder
 }

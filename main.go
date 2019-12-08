@@ -6,12 +6,6 @@ import (
 	"log"
 )
 
-const (
-	MaxIters      = 5
-	SegmentLength = 16
-	ScreenWidth   = 100
-)
-
 func main() {
 	i := flag.Int("i", MaxIters, fmt.Sprintf("number of iterations (between 1 and %d)", MaxIters))
 	flag.Parse()
